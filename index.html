@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>iKhanfont - Icon Font for The Web</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="iKhanFont">
+	<meta name="description" property="og:description" content="iKhanFont is a icon font that can be embedded in webpages ">
+	<meta name="keywords" content="icon, font, icons, dingbat, symbol">
+
+	<!--JAVASCRIPT INCLUDES-->
+	
+	<link rel="icon" href="images/favicon.ico" sizes="44x44">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+	<script type="text/javascript">
+
+	<!--JAVASCRIPT-->
+
+	$(document).ready(function(){
+	
+		$('.rating_icons a').hover(function(){
+			$(this).addClass('curele');
+			$('.rating_icons a').each(function(){
+				var class1 = $(this).attr('class');
+				if(class1 == 'curele')
+				{
+					$(this).addClass('current');
+					$(this).removeClass('curele');
+					return false;
+				}
+				else
+				{
+					$(this).addClass('current');
+				}
+			});
+		},function(){
+			$('.rating_icons a').removeClass('current');
+			$('.rating_icons a:first-child').addClass('current');
+		});
+		
+		  $('a[href*=#]').click(function() {
+		 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		 && location.hostname == this.hostname) {
+		   var $target = $(this.hash);
+		   $target = $target.length && $target
+		   || $('[name=' + this.hash.slice(1) +']');
+		   if ($target.length) {
+		  var targetOffset = $target.offset().top - 100;
+		  $('html,body').animate({scrollTop: targetOffset}, 1000);
+		   }
+		   
+		   
+		 }
+	   var forElement = $(this).attr('name');
+	   if(forElement == 'menu')
+	   {
+			$('.menu li').removeClass('current');
+			$(this).parent('li').addClass('current');
+	   }
+	  });
+  
+  		$('.menu').onePageNav();
+					
+		$("#slider").easySlider({
+			auto: true,
+			continuous: true,
+			speed: 800,
+			numeric: true
+		});
+		
+		$('.buy_middle a').hover(function(){
+			$('.buy_left').animate({left:'0'},{queue:false,duration:300});	
+			$('.buy_right').animate({right:'4px'},{queue:false,duration:300});	
+		},function(){
+			$('.buy_left').animate({left:'208px'},{queue:false,duration:500});	
+			$('.buy_right').animate({right:'220px'},{queue:false,duration:500});	
+		});
+		
+		$('.code_thumbnail li a').click(function(){
+			var code_content = $(this).parent('li').children('.common_code').children('.code_content').text();
+			var code_image = $(this).parent('li').children('.common_code').children('.code_image').html();
+			$('#code_content').text(code_content);
+			$('#code_image').html(code_image);
+		});
+		
+		setInterval('highlight()', 1500);
+		
+	});
+	
+	var id_value = 1;
+	function highlight(){
+		var active = $('span.active');
+		var next = $('#'+id_value);
+		active.removeClass('active');
+		next.addClass('active');
+		if(id_value == 94)
+		{
+			id_value = 1;
+		}
+		else
+		{
+			id_value++;
+		}
+	}
+	var count = 0;
+  function rotate() {
+    var elem2 = document.getElementById('div3');
+    elem2.style.MozTransform = 'scale(1) rotate('+count+'deg)';
+    elem2.style.WebkitTransform = 'scale(1) rotate('+count+'deg)';
+    if (count==360) { count = 0 }
+    count+=45;
+    window.setTimeout(rotate, 100);
+  }
+  window.setTimeout(rotate, 100);
+
+</script>
+</head>
+
+<body>
+
+	<!--FACEBOOK-->
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=148051435290336";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<!--TWITTER-->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	
+	<!-- GOOGLE -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+
+<div id="header">
+    <div class="wrapper clearfix">
+    	<a href="#content" class="logo">iKhanfont</a>
+        <ul class="menu">
+        	<li class="current">
+            	<a href="#content" name="menu">
+                	<span>MEET</span><br />
+                    Ganesh
+                </a>
+            </li>
+        	<li>
+            	<a href="#learn" name="menu">
+                	<span>LEARN</span><br />
+                    About Ganesh
+                </a>
+            </li>
+        	<li>
+            	<a href="#talk" name="menu">
+                	<span>TALK</span><br />
+                    About Ganesh
+                </a>
+            </li>
+        	<li>
+            	<a href="#use" name="menu">
+                	<span>USE</span><br />
+                    Ganesh
+                </a>
+            </li>
+        </ul>
+        <div class="extra_menu">        	
+            <a href="">
+                <span>BUY</span><br />
+                Ganesh
+            </a>
+        </div>
+    </div>               
+</div>
+
+<div class="wrapper">
+    <div id="content">
+    
+    	<div id="meet" class="common_border">
+        	<div class="font_text">
+            	<p class="title">Never Use an Image for an Icon Again!</p>
+                <p>Font family with 94 icons that can be used directly on the web. Never again <br />use a jpg, png, gif for your icons on blogs, mobile apps and websites. </p>
+            </div>
+            <div class="social_icons clearfix">
+
+				<!--FACEBOOK -->
+				<div class="fb-like" data-href="http://www.ikhanfont.com" data-send="false" 
+				data-layout="button_count" data-width="50" data-show-faces="false" data-font="lucida grande"></div>
+				
+				<!--TWITTER -->
+				<a href="https://twitter.com/share" class="twitter-share-button" 
+				data-text="iKhanFont - Font family of icons - Buy it Now! Thank me Later." data-hashtags="ikhanfont">Tweet</a>
+
+				<!--GOOGLE -->
+				<g:plusone size="medium"></g:plusone>
+				
+            </div>
+            <div class="ikhan_icons">
+            	<div class="main_icons clearfix">
+                	<span class="a" id="1">a</span>
+                	<span class="b" id="2">b</span>
+                	<span class="c" id="3">c</span>
+                	<span class="d" id="4">d</span>
+                	<span class="e" id="5">e</span>
+                	<span class="f" id="6">f</span>
+                	<span class="g" id="7">g</span>
+                	<span class="h" id="8">h</span>
+                	<span class="i" id="9">i</span>
+                	<span class="j" id="10">j</span>
+                	<span class="k" id="11">k</span>
+                	<span class="l" id="12">l</span>
+                	<span class="m" id="13">m</span>
+                	<span class="n" id="14">n</span>
+                	<span class="o" id="15">o</span>
+                	<span class="p" id="16">p</span>
+                	<span class="q" id="17">q</span>
+                	<span class="r" id="18">r</span>
+                	<span class="s" id="19">s</span>
+                	<span class="t" id="20">t</span>
+                	<span class="u" id="21">u</span>
+                	<span class="v" id="22">v</span>
+                	<span class="w" id="23">w</span>
+                	<span class="x" id="24">x</span>
+                	<span class="y" id="25">y</span>
+                	<span class="z" id="26">z</span>
+                </div>
+            	<div class="main_icons clearfix">
+                	<span class="A" id="27">a</span>
+                	<span class="B" id="28">b</span>
+                	<span class="C" id="29">c</span>
+                	<span class="D" id="30">d</span>
+                	<span class="E" id="31">e</span>
+                	<span class="F" id="32">f</span>
+                	<span class="G" id="33">g</span>
+                	<span class="H" id="34">h</span>
+                	<span class="I" id="35">i</span>
+                	<span class="J" id="36">j</span>
+                	<span class="K" id="37">k</span>
+                	<span class="L" id="38">l</span>
+                	<span class="M" id="39">m</span>
+                	<span class="N" id="40">n</span>
+                	<span class="O" id="41">o</span>
+                	<span class="P" id="42">p</span>
+                	<span class="Q" id="43">q</span>
+                	<span class="R" id="44">r</span>
+                	<span class="S" id="45">s</span>
+                	<span class="T" id="46">t</span>
+                	<span class="U" id="47">u</span>
+                	<span class="V" id="48">v</span>
+                	<span class="W" id="49">w</span>
+                	<span class="X" id="50">x</span>
+                	<span class="Y" id="51">y</span>
+                	<span class="Z" id="52">z</span>
+                </div>
+            	<div class="main_icons numbers_special clearfix">
+                	<span class="A" id="53">~</span>
+                	<span class="B" id="54">1</span>
+                	<span class="C" id="55">2</span>
+                	<span class="D" id="56">3</span>
+                	<span class="E" id="57">4</span>
+                	<span class="F" id="58">5</span>
+                	<span class="G" id="59">6</span>
+                	<span class="H" id="60">7</span>
+                	<span class="I" id="61">8</span>
+                	<span class="J" id="62">9</span>
+                	<span class="K" id="63">0</span>
+                	<span class="L" id="64">-</span>
+                	<span class="M" id="65">=</span>
+                	<span class="N" id="66">+</span>
+                	<span class="O" id="67">*</span>
+                	<span class="P" id="68">_</span>
+                	<span class="Q" id="69">\</span>
+                	<span class="R" id="70">[</span>
+                	<span class="S" id="71">]</span>
+                	<span class="T" id="72">{</span>
+                	<span class="U" id="73">}</span>
+                	<span class="V" id="74">:</span>
+                	<span class="W" id="75">;</span>
+                	<span class="X" id="76">&lt;</span>
+                	<span class="Y" id="77">&gt;</span>
+                	<span class="Z" id="78">?</span>
+                </div>
+            	<div class="main_icons last_row clearfix">
+                	<span class="A" id="79">~</span>
+                	<span class="B" id="80">!</span>
+                	<span class="C" id="81">@</span>
+                	<span class="D" id="82">#</span>
+                	<span class="E" id="83">$</span>
+                	<span class="F" id="84">%</span>
+                	<span class="G" id="85">^</span>
+                	<span class="H" id="86">&amp;</span>
+                	<span class="I" id="87">'</span>
+                	<span class="J" id="88">"</span>
+                	<span class="K" id="89">(</span>
+                	<span class="L" id="90">)</span>
+                	<span class="M" id="91">|</span>
+                	<span class="N" id="92">,</span>
+                	<span class="O" id="93">.</span>
+                	<span class="P" id="94">/</span>
+                </div>
+            </div>
+            <div class="ikhan_buy clearfix relatposition">
+            	<div class="buy_left">
+                	<span class="style1">Limited Time Offer</span><br />
+                    <span class="style2">Normal Price: $60</span>                
+                </div>
+         		<div class="buy_middle">
+                	<a href="" class="clearfix">
+                    	<span class="now_left">BUY NOW</span> 
+                        <span class="now_right"><span class="symbol">$</span><span class="price">47</span></span>
+                    </a>
+                </div>
+                <div class="buy_right">
+                	<p class="buy_right_left">
+                    	<span>140</span><br />
+                        BOUGHT <br />
+                        ALREADY                    
+                    </p>
+                	<p class="buy_right_right">
+                    	<span>30 DAYS</span><br />
+                        MONEYBACK<br />
+                        GUARANTEED                   
+                    </p>
+                </div>
+            </div>
+            
+            <div class="meet_bottom clearfix">
+            	<div class="lfloat first infinite">
+                	<p class="title">Infinitely Scalable</p>
+                    <p>Scale your icons to any size without losing quality. Perfect for responsive designs using media queries. </p>
+                </div>
+            	<div class="lfloat cross_browser">
+                	<p class="title">Cross Browser</p>
+                    <p>You can use Ganesh Icon Font in IE 4+, Firefox 3.5+, Chrome 4+ and Safari/Webkit 3.1+.  </p>
+                </div>
+            	<div class="lfloat resource_friendly">
+                	<p class="title">Resource-friendly</p>
+                    <p>Say goodbye to all your icon images and replace them with a 40kb embedded font.</p>
+                </div>
+            	<div class="lfloat powerful_css">
+                	<p class="title">Powerful with CSS3</p>
+                    <p>Make icons with gradients, shadows, and animations. Really make your icons come to life with no images.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="learn" class="common_border">
+        	<div class="slider relatposition">
+            	<div id="slider">
+                	<ul>
+                    	<li>
+                        	<div class="slider_text">
+                            	<p class="title">Spice up your mobile apps</p>
+                                <p>Create beautiful mobile bars without any images. Style and scale them to<br /> any size using CSS3 and still be browser compliant. Now that’s useful!</p>
+                            </div>
+                            <div class="slider_image">
+                            	<img src="images/mobile_slide.jpg" title="" />
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slider_text">
+                            	<p class="title">One font, Unlimited applications.</p>
+                                <p>Create UI elements without using any images with CSS3.<br /> Make them interactive with some simple javascript</p>
+                            </div>
+                            <div class="slider_image">
+                            	<img src="images/gadgets_slide.jpg" title="" />
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slider_text">
+                            	<p class="title">Fantastic print media</p>
+                                <p>Add some pop to your business card, newsletter, and/or poster<br /> Ganesh Icon Font is useful in any Adobe Suite application</p>
+                            </div>
+                            <div class="slider_image">
+                            	<img src="images/business_slide.jpg" title="" />
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slider_text">
+                            	<p class="title">Wonderful Presentations</p>
+                                <p>Making a presentation or letter that needs to impress clients<br/>Ganesh Icon Font can help you make them stand out</p>
+                            </div>
+                            <div class="slider_image">
+                            	<img src="images/presentation_slide.jpg" title="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="talk" class="common_border">
+        	<div class="common_text">
+            	<p class="title">Don't take our word for it!</p>
+                <p>Join the hundreds of customers that have started using Ganesh <br /> and send us your feedback</p>
+            </div>
+            <ul class="comment_main">
+            	<li class="clearfix">
+                	<div class="comment_left">
+                    	<img src="images/adil.jpg" title="" />
+                    </div>
+                    <div class="comment_right">
+                    	<div class="comment_container">                        	
+                            <p>We have just started using Ganesh within all our applications and it has made a huge difference. Not only has it sped up development and reduced our server load but most of all it has livened up our interfaces. We don’t know how we ever did without it. </p>
+                            <p class="user_info">Adil Lalani, <a href="http://www.twitvid.com">www.twitvid.com</a></p>
+                            <div class="arrow">&nbsp;</div>
+                        </div>
+                    </div>
+                </li>
+            	<li class="clearfix alternate">
+                	<div class="comment_left">
+                    	<div class="comment_container">                        	
+                            <p>On Revparmax, we have really taken to using it for everything from our page loadings, to nav bars and within all our modular page elements. It really makes our web app come to life and we use it freely knowing that we can easily add and remove icons as we please.</p>
+                            <p class="user_info">Imran Esmail, <a href="www.revparmax.com">www.revparmax.com</a></p>
+                            <div class="arrow">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="comment_right">
+                    	<img src="images/imran.png" title="" />
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="comment_left">
+                    	<img src="images/apoorva.png" title="" />
+                    </div>
+                    <div class="comment_right">
+                    	<div class="comment_container">                        	
+                            <p>We use Ganesh for our mobile application, it is lightweight which makes it load faster for our users and the things we can now do with HTML5 and CSS3 make us never want to go back to images ever again! </p>
+                            <p class="user_info">Apoorva Mehta, <a href="www.legalreach.com">www.legalreach.com</a></p>
+                            <div class="arrow">&nbsp;</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="comment_submit"><a href="">SUBMIT YOURS</a></p>
+        </div>
+        
+        <div id="use" class="common_border">
+        	<div class="common_text">
+            	<p class="title">Get started with Ganesh, now!</p>
+                <p>Here's some code samples and their corresponding output to get you started<br /> with Ganesh Icon Font right away.</p>
+            </div>
+        	
+            <div class="code_main clearfix">
+            	<div class="code_left relatposition">
+                	<textarea id="code_content">COMING SOON</textarea>
+                    <a class="code_copy">COPY</a>
+                    <p class="text_copied" id="textCopied">CODE COPIED</p>
+                </div>
+                <div class="code_right" id="code_image">
+                	<div class="code_rating">
+                    	<p class="rating_title"><span>Rate This</span></p>
+                        <div class="rating_icons clearfix">
+                        	<a href="#" class="current">1</a>
+                        	<a href="#">2</a>
+                        	<a href="#">3</a>
+                        	<a href="#">4</a>
+                        	<a href="#">5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code_thumbnail">
+            	<ul>
+                	<li>
+                    	<a code="code1"><img src="images/thumbnail_1.gif" title="" /></a>
+                        <div class="common_code" style="display:none">
+                        	<div class="code_content">COMING SOON
+							</div>
+                            <div class="code_image" id="code_images">                        	
+                                <div class="code_rating">
+                                    <p class="rating_title"><span>Rate This</span></p>
+                                    <div class="rating_icons clearfix">
+                                        <a href="#" class="current">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                	<li>
+                    	<a code="code1"><img src="images/thumbnail_2.gif" title="" /></a>
+                        <div class="common_code" style="display:none">
+                        	<div class="code_content">COMING SOON</div>
+                            <div class="code_image">                            	
+                                <div class="code_loading">
+                                    <img src="images/loading_image.gif" title="" id="div3" />
+                                    <p>LOADING</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </li>
+                	<li>
+                    	<a code="code1"><img src="images/thumbnail_3.gif" title="" /></a>
+                        <div class="common_code" style="display:none">
+                        	<div class="code_content">COMING SOON</div>
+                            <div class="code_image">                            	
+                                <div class="code_social">
+                                    <a href="#" class="code_twitter"><span>CONNECT WITH TWITTER</span></a>
+                                    <a href="#" class="code_facebook"><span>CONNECT WITH FACEBOOK</span></a>
+                                    <a href="#" class="code_google"><span>CONNECT WITH GOOGLE</span></a>
+                                </div>
+                            </div>  
+                        </div>
+                    </li>
+                	<li>
+                    	<a code="code1"><img src="images/thumbnail_4.gif" title="" /></a>
+                        <div class="common_code" style="display:none">
+                        	<div class="code_content">COMING SOON</div>
+                            <div class="code_image">                            	
+                                <div class="code_form clearfix">
+                                    <input type="text" value="Search..." onfocus="if(this.value=='Search...'){this.value=''}" onblur="if(this.value==''){this.value='Search...'}" />
+                                    <input type="submit" value="" />
+                                </div>
+                            </div>
+                        </div>  
+                    </li> 
+                </ul>
+            </div>
+            
+        </div> 
+        <a href="#meet" class="back_top">BACK TO TOP</a>       
+    </div>
+    
+    <div id="footer">
+    </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		
+		jQuery('.code_copy').zclip({
+			path:'js/ZeroClipboard.swf',
+			copy:function(){
+    					return jQuery('#code_content').val();
+				},
+			afterCopy: function(){$('#textCopied').slideDown(100).delay(5000).slideUp(100);}
+			});
+	});
+</script>
+
+</body>
+</html>

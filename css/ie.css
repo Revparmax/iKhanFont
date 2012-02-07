@@ -1,0 +1,12 @@
+/* CSS Document */
+ul, ol, dir, menu {
+zoom:1;
+}
+
+a { color:expression(this.parentNode.currentStyle['color']); }
+p{zoom:1;}
+
+.clearfix, .relatposition
+{
+	zoom:1;
+}
