@@ -1,0 +1,197 @@
+/*
+iKhanFont.com
+Copyright © 2012 iKhanFont.com
+This font is NOT free. It is illegal to use this font without paying for a license. 
+Read the license.txt included before proceeding.
+
+Seriously, don't redistribute this font. We know where you live.
+*/
+
+@font-face {
+    font-family: 'Ganesh';
+    src: url('ganesh/ganesh.eot');
+    src: url('ganesh/ganesh.eot?#iefix') format('embedded-opentype'),
+         url('ganesh/ganesh.woff') format('woff'),
+         url('ganesh/ganesh.ttf') format('truetype'),
+         url('ganesh/ganesh.svg#GaneshIFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('proxima/proxima_bold.eot');
+    src: url('proxima/proxima_bold.eot?#iefix') format('embedded-opentype'),
+         url('proxima/proxima_bold.woff') format('woff'),
+         url('proxima/proxima_bold.ttf') format('truetype'),
+         url('proxima/proxima_bold.svg#ProximaNovaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('proxima/proxima_reg.eot');
+    src: url('proxima/proxima_reg.eot?#iefix') format('embedded-opentype'),
+         url('proxima/proxima_reg.woff') format('woff'),
+         url('proxima/proxima_reg.ttf') format('truetype'),
+         url('proxima/proxima_reg.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------RATING WIDGET------------*/
+
+#star-rating {
+	font-family: 'Ganesh';
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #eeeeee;
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+}
+
+#star-rating ul{
+	margin: 0px;
+	padding: 10px;
+}
+
+.star-br{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;	
+}
+
+.star-gradient{
+	background: #f6f6f6; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWYxZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #f1f1f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); /* IE10+ */
+	background: linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-8 */
+}
+
+.star-shadow{
+	-moz-box-shadow: 0px 2px 2px #D1D1D1;
+	-webkit-box-shadow: 0px 2px 2px #D1D1D1;
+	box-shadow: 0px 2px 2px #D1D1D1;
+}
+
+#star-rating ul li{
+	display: inline;
+	margin-left: 8px;
+}
+
+#star-rating ul a{
+	text-decoration: none;
+	color: #d7d7d7;
+	text-shadow: white 1px 1px 1px;
+}
+
+#star-rating ul a:hover{
+	color: #f0b700;
+}
+
+/*---------LOADING WIDGET------------*/
+
+#loading{
+	color: #b3b7bb;
+}
+
+#loading p{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ganesh';
+	font-size: 50px;
+}
+
+#loading span{
+	font-family: 'ProximaNovaRegular';
+	font-size: 14px;
+	
+}
+
+/*--------SOCIAL WIDGET-------------*/
+
+#social{
+	width: 200px; 
+	padding: 7px;
+	border: 1px solid #2e9cc4;
+	color: #FFF; 
+}
+
+#social.box-shadow{
+	-moz-box-shadow: inset 0px 1px #86D5F4;
+	-webkit-box-shadow: inset 0px 1px #86D5F4;
+	box-shadow: inset 0px 1px #86D5F4;
+}
+
+#social.border-radius{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#social.gradient{
+	background: #49c3f5; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5YzNmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZWE3ZDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #49c3f5 0%, #2ea7d4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#49c3f5), color-stop(100%,#2ea7d4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%); /* IE10+ */
+	background: linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c3f5', endColorstr='#2ea7d4',GradientType=0 ); /* IE6-8 */
+	
+}
+
+#social p{
+	margin: 0 0 0 5px; 
+	font-family: 'Ganesh';
+	font-size: 28px; 
+	float: left;
+	text-shadow: #2582a4 -1px -1px -1px;
+}
+
+#social span{
+	font-family: "ProximaNovaBold"; 
+	font-size: 12px; 
+	line-height: 28px;
+	margin-left: 10px; 
+	text-shadow: #2582a4 -1px -1px -1px;
+}
+
+/*--------SEARCH WIDGET-------------*/
+
+#search{
+	width: 200px; 
+	height: 20px;
+	padding: 7px;
+	border: 1px solid #b6c4cc;
+	color: #909CA3;
+}
+
+#search.box-shadow{
+	-moz-box-shadow: inset 0px 2px #eeeeee;
+	-webkit-box-shadow: inset 0px 2px #eeeeee;
+	box-shadow: inset 0px 2px #eeeeee;
+}
+
+#search p{
+	margin: 0px;
+	font-family: "ProximaNovaRegular"; 
+	font-size: 16px;
+	float: left;
+}
+
+#search span{
+	font-family: 'Ganesh';
+	font-size: 20px;
+	float: right;
+}

@@ -276,6 +276,7 @@ body
 .font_text .title
 {
 	font-size:48px;
+	font-weight: normal;
 	color:#fec70b;
 	text-shadow:0 1px 1px #131517;
 	line-height:1.3;
@@ -607,7 +608,7 @@ body
 	width:492px;
 	resize:none;
 	color:#fec70b;
-	font-size:14px;
+	font-size:11px;
 }
 .code_main .code_left .code_copy
 {
