@@ -203,7 +203,7 @@
             </li>
         </ul>
         <div class="extra_menu">        	
-            <a href="http://ikhanfont.fetchapp.com/sell/oorohjae">
+            <a href="http://bit.ly/ygiMTg">
                 <span>BUY</span><br />
                 Ganesh
             </a>
@@ -216,7 +216,7 @@
     
     	<div id="meet" class="common_border">
         	<div class="font_text">
-            	<p class="title">Never Use an Image for an Icon Again!</p>
+            	<h1 class="title">Never Use an Image for an Icon Again!</h1>
                 <p>Font family with 94 icons that can be used directly on the web. Never again <br />use a jpg, png, gif for your icons on blogs, mobile apps and websites. </p>
             </div>
             <div class="social_icons clearfix">
@@ -343,9 +343,9 @@
                     <span class="style2">Normal Price: $60</span>                
                 </div>
          		<div class="buy_middle">
-                	<a href="http://ikhanfont.fetchapp.com/sell/oorohjae" class="clearfix">
+                	<a href="http://bit.ly/ygiMTg" class="clearfix">
                     	<span class="now_left">BUY NOW</span> 
-                        <span class="now_right"><span class="symbol">$</span><span class="price">47</span></span>
+                        <span class="now_right"><span class="symbol">$</span><span class="price">30</span></span>
                     </a>
                 </div>
                 <div class="buy_right">
@@ -477,12 +477,70 @@
         <div id="use" class="common_border">
         	<div class="common_text">
             	<p class="title">Get started with Ganesh, now!</p>
-                <p>Here's some code samples and their corresponding output to get you started<br /> with Ganesh Icon Font right away.</p>
+                <p>Here's some CSS samples and their corresponding output to get you started<br /> with Ganesh Icon Font right away.</p>
             </div>
         	
             <div class="code_main clearfix">
             	<div class="code_left relatposition">
-                	<textarea id="code_content">COMING SOON</textarea>
+                	<textarea id="code_content">
+@font-face { 
+	font-family: 'Ganesh';
+	src: url('ganesh.eot');
+	src: url('ganesh.eot?#iefix') format('embedded-opentype'),
+	url('ganesh.woff') format('woff'),
+	url('ganesh.ttf') format('truetype'),
+	url('ganesh.svg#GaneshIFRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+#rating {
+	font-family: 'Ganesh';
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #eeeeee;
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+}
+
+#rating ul{
+	margin: 0px;
+	padding: 10px;
+}
+
+#rating.border-radius{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;	
+}
+
+#rating.gradient{
+	background: #f6f6f6; 
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #f1f1f1 100%);  
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: -o-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: -ms-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%);  
+}
+
+#rating.shadow{
+	-moz-box-shadow: 0px 2px 2px #D1D1D1;
+	-webkit-box-shadow: 0px 2px 2px #D1D1D1;
+	box-shadow: 0px 2px 2px #D1D1D1;
+}
+
+#rating ul li{ display: inline; margin-left: 8px;}
+
+#rating ul a{ 
+	text-decoration: none; 
+	color: #d7d7d7; 
+	text-shadow: white 1px 1px 1px; 
+}
+
+#rating ul a:hover{ color: #f0b700;}
+
+</textarea>
                     <a class="code_copy">COPY</a>
                     <p class="text_copied" id="textCopied">CODE COPIED</p>
                 </div>
@@ -505,7 +563,66 @@
                 	<li>
                     	<a code="code1"><img src="images/thumbnail_1.gif" title="" /></a>
                         <div class="common_code" style="display:none">
-                        	<div class="code_content">COMING SOON
+                        	<div class="code_content"><pre><code>
+@font-face { 
+	font-family: 'Ganesh';
+	src: url('ganesh.eot');
+	src: url('ganesh.eot?#iefix') format('embedded-opentype'),
+	url('ganesh.woff') format('woff'),
+	url('ganesh.ttf') format('truetype'),
+	url('ganesh.svg#GaneshIFRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+#rating {
+	font-family: 'Ganesh';
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #eeeeee;
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+}
+
+#rating ul{
+	margin: 0px;
+	padding: 10px;
+}
+
+#rating.border-radius{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;	
+}
+
+#rating.gradient{
+	background: #f6f6f6; 
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #f1f1f1 100%);  
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: -o-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: -ms-linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%); 
+	background: linear-gradient(top,  #f6f6f6 0%,#f1f1f1 100%);  
+}
+
+#rating.shadow{
+	-moz-box-shadow: 0px 2px 2px #D1D1D1;
+	-webkit-box-shadow: 0px 2px 2px #D1D1D1;
+	box-shadow: 0px 2px 2px #D1D1D1;
+}
+
+#rating ul li{ display: inline; margin-left: 8px;}
+
+#rating ul a{ 
+	text-decoration: none; 
+	color: #d7d7d7; 
+	text-shadow: white 1px 1px 1px; 
+}
+
+#rating ul a:hover{ color: #f0b700;}
+
+</code></pre>
+	
 							</div>
                             <div class="code_image" id="code_images">                        	
                                 <div class="code_rating">
@@ -524,7 +641,34 @@
                 	<li>
                     	<a code="code1"><img src="images/thumbnail_2.gif" title="" /></a>
                         <div class="common_code" style="display:none">
-                        	<div class="code_content">COMING SOON</div>
+                        	<div class="code_content">	
+@font-face { 
+	font-family: 'Ganesh';
+	src: url('ganesh.eot');
+	src: url('ganesh.eot?#iefix') format('embedded-opentype'),
+	url('ganesh.woff') format('woff'),
+	url('ganesh.ttf') format('truetype'),
+	url('ganesh.svg#GaneshIFRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}	
+	
+#loading{
+	color: #b3b7bb;
+}
+
+#loading p{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ganesh';
+	font-size: 50px;
+}
+
+#loading span{ 
+	font-size: 14px;
+}
+
+                        	</div>
                             <div class="code_image">                            	
                                 <div class="code_loading">
                                     <img src="images/loading_image.gif" title="" id="div3" />
@@ -536,7 +680,62 @@
                 	<li>
                     	<a code="code1"><img src="images/thumbnail_3.gif" title="" /></a>
                         <div class="common_code" style="display:none">
-                        	<div class="code_content">COMING SOON</div>
+                        	<div class="code_content">
+@font-face { 
+	font-family: 'Ganesh';
+	src: url('ganesh.eot');
+	src: url('ganesh.eot?#iefix') format('embedded-opentype'),
+	url('ganesh.woff') format('woff'),
+	url('ganesh.ttf') format('truetype'),
+	url('ganesh.svg#GaneshIFRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+#social{
+	width: 200px; 
+	padding: 7px;
+	border: 1px solid #2e9cc4;
+	color: #FFF; 
+}
+
+#social.box-shadow{
+	-moz-box-shadow: inset 0px 1px #86D5F4;
+	-webkit-box-shadow: inset 0px 1px #86D5F4;
+	box-shadow: inset 0px 1px #86D5F4;
+}
+
+#social.border-radius{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#social.gradient{
+	background: #49c3f5;
+	background: -moz-linear-gradient(top,  #49c3f5 0%, #2ea7d4 100%);
+	background: -webkit-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%);
+	background: -o-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%);
+	background: -ms-linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%);
+	background: linear-gradient(top,  #49c3f5 0%,#2ea7d4 100%);
+}
+
+#social p{
+	margin: 0 0 0 5px; 
+	font-family: 'Ganesh';
+	font-size: 28px; 
+	float: left;
+	text-shadow: #2582a4 -1px -1px -1px;
+}
+
+#social span{ 
+	font-size: 12px; 
+	line-height: 28px;
+	margin-left: 10px; 
+	text-shadow: #2582a4 -1px -1px -1px;
+}
+
+                        	</div>
                             <div class="code_image">                            	
                                 <div class="code_social">
                                     <a href="#" class="code_twitter"><span>CONNECT WITH TWITTER</span></a>
@@ -549,7 +748,45 @@
                 	<li>
                     	<a code="code1"><img src="images/thumbnail_4.gif" title="" /></a>
                         <div class="common_code" style="display:none">
-                        	<div class="code_content">COMING SOON</div>
+                        	<div class="code_content">
+@font-face { 
+	font-family: 'Ganesh';
+	src: url('ganesh.eot');
+	src: url('ganesh.eot?#iefix') format('embedded-opentype'),
+	url('ganesh.woff') format('woff'),
+	url('ganesh.ttf') format('truetype'),
+	url('ganesh.svg#GaneshIFRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+								
+#search{
+	width: 200px; 
+	height: 20px;
+	padding: 7px;
+	border: 1px solid #b6c4cc;
+	color: #909CA3;
+}
+
+#search.box-shadow{
+	-moz-box-shadow: inset 0px 2px #eeeeee;
+	-webkit-box-shadow: inset 0px 2px #eeeeee;
+	box-shadow: inset 0px 2px #eeeeee;
+}
+
+#search p{
+	margin: 0px;
+	font-size: 16px;
+	float: left;
+}
+
+#search span{
+	font-family: 'Ganesh';
+	font-size: 20px;
+	float: right;
+}
+
+                        	</div>
                             <div class="code_image">                            	
                                 <div class="code_form clearfix">
                                     <input type="text" value="Search..." onfocus="if(this.value=='Search...'){this.value=''}" onblur="if(this.value==''){this.value='Search...'}" />
